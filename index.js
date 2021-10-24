@@ -41,7 +41,7 @@ function create(arr) {
         </div>  `;
     let col = document.createElement("div");
     col.className = "col-md-6 col-lg-4 p-2 card-cont";
-    col.id = element["name"];
+    col.id = element["name"]["official"];
     col.innerHTML = html;
     row.appendChild(col);
   });
