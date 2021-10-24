@@ -25,7 +25,7 @@ function create(arr) {
   arr.forEach((element, index) => {
     let html = `
         <div class="card  bg-dark text-white mb-2 m-1 text-center"  style="height:100%"  >
-            <img src=${element["flag"]} class="card-img-top" alt="country_flag">
+            <img src=${element["flags"]["png"]} class="card-img-top" alt="country_flag">
             <div class="card-body " >
               <p class="card-title h2" >${element["name"]}</p>
             </div>
