@@ -4,7 +4,7 @@ $("input").on("input", function () {
   else {
     let i = 0;
     $(".card-cont").each(function () {
-      let reg = new RegExp("^" + query, "i");
+      let reg = new RegExp(".*" + query + ".*", "i");
       if (reg.test($(this).attr("id"))) {
         $(this).show();
         i++;
