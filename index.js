@@ -27,7 +27,7 @@ function create(arr) {
         <div class="card  bg-dark text-white mb-2 m-1 text-center"  style="height:100%"  >
             <img src=${element["flags"]["png"]} class="card-img-top" alt="country_flag">
             <div class="card-body " >
-              <p class="card-title h2" >${element["name"]}</p>
+              <p class="card-title h2" >${element["name"]["official"]}</p>
             </div>
             <p>
               <a class="btn btn-primary" data-toggle="collapse" href="#id${index}" role="button" aria-expanded="false" onclick="getWeather('${element["latlng"][0]}','${element["latlng"][1]}', 'id${index}' ,this.getAttribute('aria-expanded'))">
