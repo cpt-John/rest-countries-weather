@@ -15,7 +15,7 @@ $("input").on("input", function () {
   }
 });
 
-fetch("https://restcountries.eu/rest/v2/all").then(function (data) {
+fetch("https://restcountries.com/rest/v3.1/all").then(function (data) {
   data.json().then((dataArr) => {
     create(dataArr);
   });
